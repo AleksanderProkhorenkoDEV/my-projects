@@ -1,0 +1,19 @@
+.wrapPoster{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    overflow: hidden;
+}
+
+.containerPoster{
+    width: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}

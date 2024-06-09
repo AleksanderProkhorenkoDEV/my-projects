@@ -1,0 +1,14 @@
+.itemStyle{
+    background-color: var(--mainBlue);
+
+    padding: .5rem;
+
+    text-transform: uppercase;
+    font-style: italic;
+
+    transition: all .2s ease-in-out;
+}
+
+.itemStyle:hover{
+    background-color: var(--mainPink);
+}

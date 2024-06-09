@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1rem;
+}
+
+.userData{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.userName{
+    text-transform: uppercase;
+}

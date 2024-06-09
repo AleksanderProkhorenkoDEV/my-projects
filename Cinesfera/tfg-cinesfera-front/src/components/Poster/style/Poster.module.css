@@ -1,0 +1,47 @@
+.article {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 500px;
+
+    display: flex;
+
+    position: relative;
+}
+
+.imgPoster {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 2;
+
+    cursor: pointer;
+}
+
+.number {
+    font-size: 30rem;
+
+    position: absolute;
+    z-index: 1;
+
+    left: -50%;
+    bottom: 0;
+
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--mainBlue);
+    color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+    .imgPoster {
+        width: 80%;
+        height: 80%;
+        top: 70px;
+    }
+
+    .number {
+        font-size: 20rem;
+        left: -35%;
+        top: 90px;
+    }
+}

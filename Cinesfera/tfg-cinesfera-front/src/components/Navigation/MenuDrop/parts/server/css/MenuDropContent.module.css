@@ -1,0 +1,32 @@
+.dropContent{
+    position: absolute; 
+    right: 0;
+    top: 9.5vh;
+
+    width: 300px;
+    height: fit-content;
+
+    background-color: rgba(36,36,36,1);
+
+    display: block;
+
+    animation-name: fadeIn;
+    animation-duration: .2s;
+    animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+    animation-timing-function: ease-in-out; /* Función de temporización */
+    opacity: 0; /* Inicialmente invisible */
+
+    padding: 1rem; 
+    background: rgb(255,16,83);
+    background: linear-gradient(122deg, rgba(255,16,83,0.7959558823529411) 10%, rgba(68,161,238,1) 100%);  
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Inicialmente invisible */
+    }
+    to {
+        opacity: 1; /* Visible */
+    }
+}

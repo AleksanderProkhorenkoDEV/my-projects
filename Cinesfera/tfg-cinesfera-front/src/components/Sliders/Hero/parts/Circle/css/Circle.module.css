@@ -1,0 +1,13 @@
+.circle{
+    border-radius: 100%;
+    background-color: var(--mainBlue);
+
+    width:8px;
+    height: 8px;
+
+    cursor: pointer;
+}
+
+.buttonActive{
+    background-color: var(--mainPink);
+}

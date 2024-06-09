@@ -1,0 +1,26 @@
+.imgMovies {
+    width: 500px;
+    height: 600px;
+
+    flex: 0 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .imgMovies {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .imgMovies {
+        width: 50%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imgMovies {
+        width: 100%;
+        height: 500px;
+    }
+}

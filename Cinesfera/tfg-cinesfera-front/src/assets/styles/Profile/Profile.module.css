@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero {
+    background-image: url('/images/Profile.jpg');
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section {
+    width: 80%;
+}
+
+.media {
+    border: 1px solid red;
+}

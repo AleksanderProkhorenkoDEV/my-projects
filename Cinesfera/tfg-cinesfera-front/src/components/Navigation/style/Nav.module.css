@@ -1,0 +1,52 @@
+.link {
+    text-decoration: none;
+}
+
+.nav {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    margin-right: 2.5rem;
+
+    position: relative;
+}
+
+.link {
+    color: var(--mainWhite);
+    transition: all .2s ease-in-out;
+}
+
+.link:hover {
+    color: var(--mainBlue);
+}
+
+.active {
+    color: var(--mainBlue);
+}
+
+.login {
+    background-color: var(--mainPink);
+    color: var(--mainWhite);
+
+    padding: .5rem .8rem;
+    transition: background-color .2s ease-in-out;
+}
+
+.login:hover {
+    background-color: var(--mainPinkHover);
+}
+
+@media screen and (max-width: 950px) {
+    .nav {
+        justify-content: flex-end;
+    }
+
+    .link {
+        display: none;
+    }
+}
