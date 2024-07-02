@@ -139,6 +139,7 @@ body {
 * {
 	box-sizing: border-box;
 	--font-main-size: clamp(1rem, 0.963rem + 0.198vw, 1.2rem);
+	--font-carrusel: clamp(2rem, 1.815rem + 0.988vw, 3rem);
 }
 
 .neon {
@@ -163,4 +164,9 @@ main {
 	.rotate-45-deg {
 		transform: rotate(-45deg);
 	}
+}
+
+.maskImage {
+	mask-image: linear-gradient(black 80%,
+			transparent);
 }

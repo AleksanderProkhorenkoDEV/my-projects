@@ -13,9 +13,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`bg-bg-grey text-color-text w-full h-full ${montserrat.className}`}
-      >
+      <body className={`bg-bg-grey text-color-text ${montserrat.className}`}>
         <ProviderNextUI>
           <Menu />
           {children}
