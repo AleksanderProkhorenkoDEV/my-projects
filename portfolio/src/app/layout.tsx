@@ -1,6 +1,4 @@
 import ProviderNextUI from "@/Components/Providers/nextui-provider";
-import Menu from "@/Components/UI/navbar";
-import { montserrat } from "@/lib/Fonts";
 import type { Metadata } from "next";
 import "./globals.css";
 
