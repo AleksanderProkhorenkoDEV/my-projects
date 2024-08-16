@@ -1,5 +1,12 @@
 {
     "HomePage": {
         "title": "Hola mundo!"
+    },
+    "nav": {
+        "me": "Conoceme",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "git-icon": "Icono de Github",
+        "lin-icon": "Icono de Linkedin"
     }
 }
