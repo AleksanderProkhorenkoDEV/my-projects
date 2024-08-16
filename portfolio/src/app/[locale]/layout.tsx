@@ -1,8 +1,9 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { roboto } from "@/assets/fonts";
+import { montserrat } from "@/assets/fonts";
 import { Providers } from '../provider';
 import type { Metadata } from "next";
+import Nav from '@/components/nav';
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
@@ -16,9 +17,10 @@ export default async function LocaleLayout({ children, params: { locale } }: { c
 
   return (
     <html lang={locale}>
-      <body className={`bg-main-bg ${roboto.className}`}>
+      <body className={`bg-main-bg ${montserrat.className} min-h-screen`}>
         <NextIntlClientProvider messages={messages}>
           <Providers>
+            <Nav />
             {children}
           </Providers>
         </NextIntlClientProvider>
