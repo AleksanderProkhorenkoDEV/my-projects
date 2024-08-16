@@ -1,7 +1,7 @@
-import { NextUIProvider } from "@nextui-org/react";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { roboto } from "@/assets/fonts";
+import { Providers } from '../provider';
 import type { Metadata } from "next";
 import "@/app/globals.css";
 
@@ -18,9 +18,9 @@ export default async function LocaleLayout({ children, params: { locale } }: { c
     <html lang={locale}>
       <body className={`bg-main-bg ${roboto.className}`}>
         <NextIntlClientProvider messages={messages}>
-          <NextUIProvider>
+          <Providers>
             {children}
-          </NextUIProvider>
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

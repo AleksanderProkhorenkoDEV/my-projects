@@ -1,4 +1,10 @@
 
 export default async function LocaleLayout({ children, }: { children: React.ReactNode; }) {
-    return children;
+    return (
+        <html>
+            <body>
+                {children}
+            </body>
+        </html>
+    );
 }
