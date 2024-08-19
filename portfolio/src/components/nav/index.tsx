@@ -18,7 +18,7 @@ export default function App() {
     ];
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered>
+        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} isBlurred={false} position="static" className="bg-transparent">
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -36,7 +36,7 @@ export default function App() {
                         {t('me')}
                     </Link>
                 </NavbarItem>
-                <NavbarItem isActive>
+                <NavbarItem>
                     <Link color="foreground" href="/projects">
                         {t('projects')}
                     </Link>
@@ -55,7 +55,7 @@ export default function App() {
                     <Link href="https://www.linkedin.com/in/aleksander-trujillo-prokhorenko-90a066299/"><Image src={"/assets/icons/linkedin-svg.svg"} width={24} height={24} alt={t('lin-icon')} /></Link>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu>
+            <NavbarMenu className="bg-second-bg">
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link

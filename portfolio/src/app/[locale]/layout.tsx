@@ -1,10 +1,10 @@
+import { Providers } from '../../Providers/next-ui/provider';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { montserrat } from "@/assets/fonts";
-import { Providers } from '../provider';
 import type { Metadata } from "next";
 import Nav from '@/components/nav';
-import "@/app/globals.css";
+import './globals.css';
 
 export const metadata: Metadata = {
   title: "APROKHORENKODEV",
@@ -17,7 +17,7 @@ export default async function LocaleLayout({ children, params: { locale } }: { c
 
   return (
     <html lang={locale}>
-      <body className={`bg-main-bg ${montserrat.className} min-h-screen`}>
+      <body className={`bg-main-bg ${montserrat.className} min-h-screen` }>
         <NextIntlClientProvider messages={messages}>
           <Providers>
             <Nav />
