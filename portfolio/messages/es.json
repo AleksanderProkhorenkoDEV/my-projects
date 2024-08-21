@@ -8,5 +8,11 @@
         "contact": "Contacto",
         "git-icon": "Icono de Github",
         "lin-icon": "Icono de Linkedin"
+    },
+    "Manifest": {
+        "name": "Aleksander Trujillo Prokhorenko"
+    },
+    "LocaleLayout": {
+        "title": "APROKHORENKODEV PORFOLIO"
     }
 }

@@ -1,28 +1,50 @@
-import { Providers } from '../../Providers/next-ui/provider';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { montserrat } from "@/assets/fonts";
-import type { Metadata } from "next";
+import {
+  getMessages,
+  getTranslations,
+  unstable_setRequestLocale
+} from 'next-intl/server';
+import { ReactNode } from 'react';
+import { locales } from '@/config';
 import Nav from '@/components/nav';
-import './globals.css';
 
-export const metadata: Metadata = {
-  title: "APROKHORENKODEV",
-  description: "Porfolio de Aleksander",
+
+type Props = {
+  children: ReactNode;
+  params: { locale: string };
 };
 
-export default async function LocaleLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string }; }) {
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
+export async function generateMetadata({
+  params: { locale }
+}: Omit<Props, 'children'>) {
+  const t = await getTranslations({ locale, namespace: 'LocaleLayout' });
+
+  return {
+    title: t('title')
+  };
+}
+
+export default async function LocaleLayout({
+  children,
+  params: { locale }
+}: Props) {
+  // Enable static rendering
+  unstable_setRequestLocale(locale);
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={`bg-main-bg ${montserrat.className} min-h-screen` }>
+    <html className="h-full" lang={locale}>
+      <body className={'flex h-full flex-col'}>
         <NextIntlClientProvider messages={messages}>
-          <Providers>
-            <Nav />
-            {children}
-          </Providers>
+          <Nav />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

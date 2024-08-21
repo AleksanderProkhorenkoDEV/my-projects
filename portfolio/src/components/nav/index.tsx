@@ -7,7 +7,7 @@ import Link from "next/link";
 import React from "react";
 
 
-export default function App() {
+export default function Nav() {
     const t = useTranslations('nav');
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
