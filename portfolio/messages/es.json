@@ -14,5 +14,9 @@
     },
     "LocaleLayout": {
         "title": "APROKHORENKODEV PORFOLIO"
+    },
+    "LocaleSwitcher": {
+        "label": "Cambiar idioma",
+        "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
     }
 }
