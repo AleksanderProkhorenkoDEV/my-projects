@@ -2,6 +2,8 @@
 
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "../switcher-locale/locale-switcher";
+import NavigationLink from "./navigation-link";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -32,22 +34,20 @@ export default function Nav() {
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
-                    <Link color="foreground" href="/">
-                        {t('me')}
-                    </Link>
+                    <NavigationLink href="/">{t('me')}</NavigationLink>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="/projects">
-                        {t('projects')}
-                    </Link>
+                    <NavigationLink href="/projects">{t('projects')}</NavigationLink>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="/contact" >
-                        {t('contact')}
-                    </Link>
+                    <NavigationLink href="/contact">{t('contact')}</NavigationLink>
                 </NavbarItem>
+
             </NavbarContent>
             <NavbarContent justify="end">
+                <NavbarItem>
+                    <LocaleSwitcher />
+                </NavbarItem>
                 <NavbarItem className="hidden lg:flex">
                     <Link href="https://github.com/AleksanderProkhorenkoDEV"><Image src={"/assets/icons/github-svg.svg"} width={24} height={24} alt={t('git-icon')} /></Link>
                 </NavbarItem>
