@@ -13,21 +13,14 @@ export default function Nav() {
     const t = useTranslations('nav');
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-    const menuItems = [
-        "me",
-        "projects",
-        "contact",
-    ];
-
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} isBlurred={false} position="static" className="bg-transparent">
+        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} isBlurred={true} position="static" className="bg-transparent">
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden"
+                    className="sm:hidden "
                 />
                 <NavbarBrand>
-
                     <p className="font-bold text-inherit">ADEV</p>
                 </NavbarBrand>
             </NavbarContent>
@@ -42,7 +35,6 @@ export default function Nav() {
                 <NavbarItem>
                     <NavigationLink href="/contact">{t('contact')}</NavigationLink>
                 </NavbarItem>
-
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem>
@@ -55,20 +47,10 @@ export default function Nav() {
                     <Link href="https://www.linkedin.com/in/aleksander-trujillo-prokhorenko-90a066299/"><Image src={"/assets/icons/linkedin-svg.svg"} width={24} height={24} alt={t('lin-icon')} /></Link>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu className="bg-second-bg">
-                {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link
-                            color={
-                                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                            }
-                            className="w-full"
-                            href="#"
-                        >
-                            {t(item)}
-                        </Link>
-                    </NavbarMenuItem>
-                ))}
+            <NavbarMenu className="bg-main-bg">
+                <NavigationLink href="/">{t('me')}</NavigationLink>
+                <NavigationLink href="/projects">{t('projects')}</NavigationLink>
+                <NavigationLink href="/contact">{t('contact')}</NavigationLink>
             </NavbarMenu>
         </Navbar>
     );

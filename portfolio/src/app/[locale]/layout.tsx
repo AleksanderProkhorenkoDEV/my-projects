@@ -40,7 +40,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html className="h-full" lang={locale}>
+    <html className="h-full bg-main-bg" lang={locale}>
       <body className={'flex h-full flex-col'}>
         <NextIntlClientProvider messages={messages}>
           <Nav />
