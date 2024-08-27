@@ -7,6 +7,7 @@ import {
 import { ReactNode } from 'react';
 import { locales } from '@/config';
 import Nav from '@/components/nav';
+import Return from '@/components/return';
 
 
 type Props = {
@@ -45,6 +46,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Nav />
           {children}
+          <Return />
         </NextIntlClientProvider>
       </body>
     </html>

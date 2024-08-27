@@ -15,8 +15,8 @@ export default function NavigationLink<Pathname extends keyof typeof pathnames>(
         <Link
             aria-current={isActive ? 'page' : undefined}
             className={
-                `inline-block px-2 py-3 transition-colors uppercase'
-                ${isActive ? 'text-main-color' : 'hover:text-gray-200'}`
+                `inline-block px-2 py-3 transition-colors ease-in-out uppercase'
+                ${isActive ? 'text-main-color' : 'hover:text-main-color'}`
             }
             href={href}
             {...rest}

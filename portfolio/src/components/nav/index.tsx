@@ -14,7 +14,7 @@ export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} isBlurred={true} position="static" className="bg-transparent">
+        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} isBlurred={true} position="sticky" className="bg-transparent">
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
