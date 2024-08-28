@@ -1,6 +1,10 @@
 {
     "HomePage": {
-        "title": "Web Developer"
+        "title": "Web Developer",
+        "location": "Granada, Spain",
+        "www": "WoRking Worldwide",
+        "work": "Open to Work",
+        "scroll": "Let´s Talk!"
     },
     "nav": {
         "me": "About me",

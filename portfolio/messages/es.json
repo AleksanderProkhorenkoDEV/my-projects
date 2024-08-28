@@ -1,6 +1,10 @@
 {
     "HomePage": {
-        "title": "Desarrollador Web"
+        "title": "Desarrollador Web",
+        "location": "Granada, España",
+        "www": "Trabajando en todo el mundo",
+        "work": "Buscando Trabajo",
+        "scroll": "Contactemos!"
     },
     "nav": {
         "me": "Conoceme",
