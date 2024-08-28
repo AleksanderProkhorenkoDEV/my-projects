@@ -2,49 +2,217 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
-	
+
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+	background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--accent);
+	-webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+	background: var(--background);
+}
+
+html {
+	scroll-snap-type: y mandatory;
+}
+
+h2 {
+	margin: 0;
+	color: var(--accent);
+	left: calc(50% + 130px);
+	font-size: 56px;
+	font-weight: 600;
+	letter-spacing: -3px;
+	line-height: 1.2;
+	position: absolute;
+}
+
+.section-parallax {
+	min-height: 30vh;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
+}
+
+.progress {
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 5px;
+	bottom: 100px;
+}
+
+.parallax {
+	overflow: hidden;
+	letter-spacing: -2px;
+	line-height: 0.8;
+	margin: 0;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
+
+	padding: 2rem;
+
+	width: 100%;
+}
+
+.parallax .scroller {
+	text-transform: uppercase;
+	font-size: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.parallax span {
+	display: block;
+	margin-right: 30px;
 }
