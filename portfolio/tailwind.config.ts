@@ -15,6 +15,16 @@ const config: Config = {
         "main-color": "#2667FF",
         "dark-main-color": "#1040b0"
       },
+      animation: {
+        fade: 'fade 1.3s ease-in-out infinite',
+      },
+      keyframes: {
+        fade: {
+          '0%': { opacity: '0' },
+          '50%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      }
     },
   },
   darkMode: "class", // Si estás usando el modo oscuro
