@@ -156,16 +156,6 @@ html {
 	scroll-snap-type: y mandatory;
 }
 
-h2 {
-	margin: 0;
-	color: var(--accent);
-	left: calc(50% + 130px);
-	font-size: 56px;
-	font-weight: 600;
-	letter-spacing: -3px;
-	line-height: 1.2;
-	position: absolute;
-}
 
 .section-parallax {
 	min-height: 30vh;
