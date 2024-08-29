@@ -4,7 +4,8 @@
         "location": "Granada, Spain",
         "www": "WoRking Worldwide",
         "work": "Open to Work",
-        "scroll": "Let´s Talk!"
+        "scroll": "Get in Touch!",
+        "contact":"Contact!"
     },
     "nav": {
         "me": "About me",
@@ -22,5 +23,22 @@
     "LocaleSwitcher": {
         "label": "Change language",
         "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
+    },
+    "card-bike":{
+        "title": "My Passion",
+        "description": "Motorbikes are something that can give you freedom and happiness, simply with the sound of the engine or its aesthetics, they are fine and elegant."
+    },
+    "card-me":{
+        "title": "Me: Aleksander",
+        "data":"I'm from Granada, Spain, I'm 20 years old and I'm still growing!",
+        "description": "I am a very proactive person, I like learning and discovering new things, apart from web development I also like videogames and playing sports."
+    },
+    "card-web":{
+        "title": "Web development",
+        "description": "It's something that didn't really appeal to me at first, but in the end I ended up studying it and it's one of my passions and hobbies to this day because I enjoy it and I have a good time, because you don't stop learning all the time."
+    },
+    "card-curiosidad":{
+        "title": "Curiosity",
+        "description": "I think that in order to be successful, apart from making an effort and dedicating time to it, if you are not a curious person and you don't want to learn new things and it doesn't attract your attention, you can't do it because that means you don't like it."
     }
 }

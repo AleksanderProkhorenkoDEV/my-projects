@@ -4,7 +4,8 @@
         "location": "Granada, España",
         "www": "Trabajando en todo el mundo",
         "work": "Buscando Trabajo",
-        "scroll": "Contactemos!"
+        "scroll": "Contactemos!",
+        "contact":"Contacta!"
     },
     "nav": {
         "me": "Conoceme",
@@ -22,5 +23,22 @@
     "LocaleSwitcher": {
         "label": "Cambiar idioma",
         "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
+    },
+    "card-bike":{
+        "title": "Mi pasión",
+        "description": "Las motos es algo que te puede dar libertad y felicidad, simplente con el sonido del motor o su estetica, son finas y elegantes"
+    },
+    "card-me":{
+        "title": "Yo: Aleksander",
+        "data":"Soy de Granada, España, tengo 20 años y ¡sigo creciendo!",
+        "description": "Soy una persona bastante proactiva, me gusta mucho aprender y descubrir cosas nuevas, aparte del desarrollo web también me gustan los videojuegos y hacer deporte.."
+    },
+    "card-web":{
+        "title": "Desarrollo Web",
+        "description": "Es una cosa que al principio no me llamaba mucho, pero al final acabe estudiándolo y es una de mis pasiones y mis hobbies a día de hoy ya que disfruto con esto y me lo paso bien, porque no paras de aprender continuamente."
+    },
+    "card-curiosidad":{
+        "title": "Curiosidad",
+        "description": "Pienso que para poder tener éxito a parte de esforzarte y dedicarle tiempo, si no eres una persona curiosa y no tienes ganas de aprender cosas nuevas y no te llama la atención no puedes hacerlo porque eso significa que no te gusta."
     }
 }
