@@ -12,10 +12,13 @@
   "dependencies": {
     "@nextui-org/navbar": "^2.0.36",
     "@nextui-org/react": "^2.4.6",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
     "next-intl": "^3.17.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-element-to-jsx-string": "^15.0.0",
+    "tailwind-merge": "^2.5.2",
     "uvcanvas": "^0.2.1"
   },
   "devDependencies": {
