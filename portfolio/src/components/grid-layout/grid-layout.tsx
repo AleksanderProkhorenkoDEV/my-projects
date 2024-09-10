@@ -1,12 +1,15 @@
 import { useTranslations } from "next-intl";
+import { bebas, montserrat } from '@/assets/fonts';
 import { LayoutGrid } from "./layout";
 
 
 export function Grid() {
-
+    const t = useTranslations('grid')
     return (
-        <div className="h-screen py-20 w-full">
+        <div className="h-screen py-20 w-full flex flex-col items-center">
+            <h2 className={`${bebas.className} text-5xl w-[65rem] `}>{t('title')}</h2>
             <LayoutGrid cards={cards} />
+            <p className={`${montserrat.className} w-[65rem] text-end text-xl`}>{t('description')}</p>
         </div>
     );
 }
@@ -32,11 +35,11 @@ const SkeletonTwo = () => {
     return (
         <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-            {t('title')}
+                {t('title')}
             </p>
             <p className="font-normal text-base text-white mt-2">{t('data')}</p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-            {t('description')}
+                {t('description')}
             </p>
         </div>
     );
@@ -56,14 +59,14 @@ const SkeletonThree = () => {
     );
 };
 const SkeletonFour = () => {
+    const t = useTranslations('card-curiosidad')
     return (
         <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-                Rivers are serene
+                {t('title')}
             </p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                A house by the river is a place of peace and tranquility. It&apos;s the
-                perfect place to relax, unwind, and enjoy life.
+                {t('description')}
             </p>
         </div>
     );
@@ -74,27 +77,27 @@ const cards = [
         id: 1,
         content: <SkeletonOne />,
         className: "md:col-span-2 cursor-pointer",
-        thumbnail: "/assets/images/honda-cbr-600.jpg"
+        thumbnail: "/assets/images/4.4.jpg"
     },
     {
         id: 2,
         content: <SkeletonTwo />,
         className: "col-span-1 cursor-pointer",
         thumbnail:
-            "/assets/images/me.jpg",
+            "/assets/images/3.3.jpg",
     },
     {
         id: 3,
         content: <SkeletonThree />,
         className: "col-span-1 cursor-pointer",
         thumbnail:
-            "/assets/images/Desarrollo-web.jpg",
+            "/assets/images/2.2.jpg",
     },
     {
         id: 4,
         content: <SkeletonFour />,
         className: "md:col-span-2 cursor-pointer",
         thumbnail:
-            "/assets/images/Curiosidad.jpg",
+            "/assets/images/1.1.jpg",
     },
 ];

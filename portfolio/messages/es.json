@@ -40,5 +40,9 @@
     "card-curiosidad":{
         "title": "Curiosidad",
         "description": "Pienso que para poder tener éxito a parte de esforzarte y dedicarle tiempo, si no eres una persona curiosa y no tienes ganas de aprender cosas nuevas y no te llama la atención no puedes hacerlo porque eso significa que no te gusta."
+    },
+    "grid":{
+        "title":"Detras del código",
+        "description":"de Aleksander"
     }
 }

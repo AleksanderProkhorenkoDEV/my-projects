@@ -40,5 +40,9 @@
     "card-curiosidad":{
         "title": "Curiosity",
         "description": "I think that in order to be successful, apart from making an effort and dedicating time to it, if you are not a curious person and you don't want to learn new things and it doesn't attract your attention, you can't do it because that means you don't like it."
+    },
+    "grid":{
+        "title":"Behind the Code",
+        "description":"by Aleksander"
     }
 }
