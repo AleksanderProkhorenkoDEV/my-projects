@@ -13,7 +13,8 @@ const config: Config = {
       colors: {
         "main-bg": "#E1E1DD",
         "main-color": "#2667FF",
-        "dark-main-color": "#1040b0"
+        "dark-main-color": "#1040b0",
+        "dark-bg": "#2D2A32"
       },
       animation: {
         fade: 'fade 1.3s ease-in-out infinite',
