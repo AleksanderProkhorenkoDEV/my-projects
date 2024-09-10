@@ -44,5 +44,9 @@
     "grid":{
         "title":"Behind the Code",
         "description":"by Aleksander"
+    },
+    "footer":{
+        "location": "Granada, Spain",
+        "sub-footer": "This page has been developed and designed by Aleksander"
     }
 }

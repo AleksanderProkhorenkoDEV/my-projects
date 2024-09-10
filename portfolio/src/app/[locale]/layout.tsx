@@ -1,13 +1,10 @@
+import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
-import {
-  getMessages,
-  getTranslations,
-  unstable_setRequestLocale
-} from 'next-intl/server';
-import { ReactNode } from 'react';
-import { locales } from '@/config';
-import Nav from '@/components/nav';
+import Footer from '@/components/footer/footer';
 import Return from '@/components/return';
+import Nav from '@/components/nav';
+import { locales } from '@/config';
+import { ReactNode } from 'react';
 
 
 type Props = {
@@ -47,6 +44,7 @@ export default async function LocaleLayout({
           <Nav />
           {children}
           <Return />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

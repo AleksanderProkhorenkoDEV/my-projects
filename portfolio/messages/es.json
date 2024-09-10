@@ -44,5 +44,9 @@
     "grid":{
         "title":"Detras del código",
         "description":"de Aleksander"
+    },
+    "footer":{
+        "location": "Granada, España",
+        "sub-footer":"Esta página a sido desarrollada y diseñada por Aleksander"
     }
 }
