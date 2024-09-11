@@ -47,6 +47,8 @@
     },
     "footer":{
         "location": "Granada, Spain",
-        "sub-footer": "This page has been developed and designed by Aleksander"
+        "sub-footer": "This page has been developed and designed by Aleksander",
+        "seneca":"Luck is what happens when preparation coincides with opportunity.",
+        "links":"Links of interest"
     }
 }

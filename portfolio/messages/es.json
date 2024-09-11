@@ -47,6 +47,8 @@
     },
     "footer":{
         "location": "Granada, España",
-        "sub-footer":"Esta página a sido desarrollada y diseñada por Aleksander"
+        "sub-footer":"Esta página a sido desarrollada y diseñada por Aleksander",
+        "seneca":"La suerte es lo que ocurre cuando la preparación coincide con la oportunidad.",
+        "links":"Enlaces de interes"
     }
 }
