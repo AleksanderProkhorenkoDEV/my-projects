@@ -17,3 +17,9 @@ export const montserrat = Montserrat({
     weight: ['400'],
     style: ['normal']
 })
+
+export const montserrat_ligth = Montserrat({
+    subsets: ['latin'],
+    weight: ['200'],
+    style: ['normal']
+})
