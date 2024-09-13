@@ -1,9 +1,10 @@
 'use client'
 
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
-import { useTranslations } from "next-intl";
 import LocaleSwitcher from "../switcher-locale/locale-switcher";
 import NavigationLink from "./navigation-link";
+import { useTranslations } from "next-intl";
+import { montserrat } from "@/assets/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -14,7 +15,7 @@ export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} isBlurred={true} position="sticky" className="bg-transparent">
+        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} isBlurred={true} position="sticky" className={`bg-transparent ${montserrat.className}`}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
