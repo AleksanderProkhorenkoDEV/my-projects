@@ -50,5 +50,9 @@
         "sub-footer": "This page has been developed and designed by Aleksander",
         "seneca":"Luck is what happens when preparation coincides with opportunity.",
         "links":"Links of interest"
+    },
+    "projects":{
+        "hero-title":"Project area",
+        "hero-text": "Here you can see my art."
     }
 }

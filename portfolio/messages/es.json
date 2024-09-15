@@ -50,5 +50,9 @@
         "sub-footer":"Esta página a sido desarrollada y diseñada por Aleksander",
         "seneca":"La suerte es lo que ocurre cuando la preparación coincide con la oportunidad.",
         "links":"Enlaces de interes"
+    },
+    "projects":{
+        "hero-title":"Zona de proyectos",
+        "hero-text": "Aquí podréis ver mi arte."
     }
 }
