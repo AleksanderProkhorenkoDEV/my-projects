@@ -1,12 +1,7 @@
-'use client'
-
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
-import React, { useState } from "react";
-
-
+import React from "react";
 
 const OwnCard = () => {
-    const [liked, setLiked] = useState(false);
 
     return (
         <Card
@@ -34,7 +29,7 @@ const OwnCard = () => {
                                 <p className="text-small text-foreground/80">12 Tracks</p>
                                 <h1 className="text-large font-medium mt-2">Frontend Radio</h1>
                             </div>
-                            
+
                         </div>
 
                     </div>
