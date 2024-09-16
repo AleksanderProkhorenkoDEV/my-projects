@@ -1,9 +1,11 @@
+import TextGenerateEffect from '@/components/anima-text/animate-text';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { bebas, montserrat } from '@/assets/fonts';
+import Baner from '@/components/baner/baner';
+import OwnCard from '@/components/card/card';
 import { useTranslations } from 'next-intl';
 import { ProjectPageProps } from '@/types';
 import { Velustro } from "uvcanvas"
-import TextGenerateEffect from '@/components/anima-text/animate-text';
 
 
 
@@ -21,6 +23,10 @@ export default function ProjectPage({ params: { locale } }: ProjectPageProps) {
                     <TextGenerateEffect words={t('hero-title')} className={`uppercase ${bebas.className} text-6xl w-3/4`}></TextGenerateEffect>
                     <TextGenerateEffect words={t('hero-text')} className='text-end w-3/4 text-2xl'></TextGenerateEffect>
                 </div>
+            </section>
+            <Baner />
+            <section>
+                <OwnCard />
             </section>
         </main>
     );
