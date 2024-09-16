@@ -54,5 +54,10 @@
     "projects":{
         "hero-title":"Project area",
         "hero-text": "Here you can see my art."
+    },
+    "banner":{
+        "title": "Would you like to have the best website?",
+        "message":"So let's get in touch and let's solve your problems, click on the button and you will be able to access my curriculum and my contact details!",
+        "contacta": "Talk to me!"
     }
 }

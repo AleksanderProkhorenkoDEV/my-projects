@@ -54,5 +54,10 @@
     "projects":{
         "hero-title":"Zona de proyectos",
         "hero-text": "Aquí podréis ver mi arte."
+    },
+    "banner":{
+        "title": "¿Te gustaría tener la mejor página web?",
+        "message":"Pues pongamonos en contacto y demosle solución a tus problemas, pulsa en el botón y podras acceder a mi curriculum y a mis datos de contacto!!",
+        "contacta": "Hablame!"
     }
 }
