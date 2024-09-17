@@ -25,8 +25,9 @@ export default function ProjectPage({ params: { locale } }: ProjectPageProps) {
                 </div>
             </section>
             <Baner />
-            <section>
-                <OwnCard />
+            <section className='border border-indigo-800 w-11/12 mx-auto'>
+                
+                
             </section>
         </main>
     );
