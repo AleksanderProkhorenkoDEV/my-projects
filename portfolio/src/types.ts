@@ -7,3 +7,11 @@ export interface ProjectPageProps {
         locale: Locale;
     };
 }
+
+export interface Cards {
+    image: string,
+    title: string,
+    description: string,
+    github: string,
+    link: string
+}
