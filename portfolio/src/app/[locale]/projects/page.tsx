@@ -1,18 +1,17 @@
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import TextGenerateEffect from '@/components/anima-text/animate-text';
-import { unstable_setRequestLocale } from 'next-intl/server';
 import { bebas, montserrat } from '@/assets/fonts';
 import Baner from '@/components/baner/baner';
 import OwnCard from '@/components/card/card';
-import { useTranslations } from 'next-intl';
-import { ProjectPageProps } from '@/types';
+import { Cards, ProjectPageProps, Projects } from '@/types';
 import { Velustro } from "uvcanvas"
+import { Suspense } from 'react';
 
-
-
-
-export default function ProjectPage({ params: { locale } }: ProjectPageProps) {
+export default async function ProjectPage({ params: { locale } }: ProjectPageProps) {
     unstable_setRequestLocale(locale);
-    const t = useTranslations('projects');
+    const t = await getTranslations('projects');
+    const messages: Projects = (await import(`/messages/data/${locale}/projects.json`)).default;
+
     return (
         <main className={`w-full flex flex-col gap-8 pb-8 ${montserrat.className}`}>
             <section className='w-full h-screen flex flex-col items-start justify-end gap-4 overflow-hidden relative'>
@@ -25,10 +24,22 @@ export default function ProjectPage({ params: { locale } }: ProjectPageProps) {
                 </div>
             </section>
             <Baner />
-            <section className='border border-indigo-800 w-11/12 mx-auto'>
-                
-                
-            </section>
+            <Suspense fallback={"laoding..."}>
+                <section className='border border-indigo-800 w-11/12 mx-auto'>
+                    {
+                        Object.entries(messages).map(([key, project]) => (
+                            <OwnCard
+                                key={key}
+                                image={project.image}
+                                title={project.title}
+                                description={project.description}
+                                github={project.github}
+                                link={project.link}
+                            />
+                        ))
+                    }
+                </section>
+            </Suspense>
         </main>
     );
 }
