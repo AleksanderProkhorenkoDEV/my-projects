@@ -15,3 +15,7 @@ export interface Cards {
     github: string,
     link: string
 }
+
+export interface Projects {
+    [key: string] : Cards,
+}
