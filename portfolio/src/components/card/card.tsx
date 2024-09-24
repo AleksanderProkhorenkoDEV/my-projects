@@ -4,7 +4,8 @@ import Link from "next/link";
 import React from "react";
 
 const OwnCard = ({image, title, description, github, link}: Cards) => {
-
+    console.log(image);
+    
     return (
         <Card
             isBlurred
@@ -32,8 +33,8 @@ const OwnCard = ({image, title, description, github, link}: Cards) => {
                             </div>
                         </div>
                         <div>
-                            <Link href={github}>Github</Link>
-                            <Link href={link}>View project</Link>
+                            {/* <Link href={github}>Github</Link>
+                            <Link href={link}>View project</Link> */}
                         </div>
                     </div>
                 </div>
