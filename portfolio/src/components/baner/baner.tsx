@@ -6,8 +6,8 @@ const Baner = () => {
     const t = useTranslations('banner');
     return (
         <div className="w-full flex items-center justify-center">
-            <section className="border-2 border-transparent flex flex-col gap-6 items-start justify-start p-6 bg-gradient-to-r from-dark-main-color via-indigo-700 to-main-color text-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl w-11/12">
-                <h3 className={`text-5xl font-extrabold tracking-tight ${bebas.className} leading-tight tracking-[.55rem]`}>
+            <section className=" flex flex-col gap-6 items-start justify-start p-6 bg-gradient-to-r from-dark-main-color via-indigo-700 to-main-color text-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl w-11/12">
+                <h3 className={`text-5xl font-extrabold tracking-tight ${bebas.className} leading-tight tracking-[.70rem]`}>
                     {t("title")}
                 </h3>
                 <p className="text-pretty text-lg leading-relaxed">
