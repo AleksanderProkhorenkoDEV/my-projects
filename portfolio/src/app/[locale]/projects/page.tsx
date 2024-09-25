@@ -6,6 +6,8 @@ import OwnCard from '@/components/card/card';
 import { Cards, ProjectPageProps, Projects } from '@/types';
 import { Velustro } from "uvcanvas"
 import { Suspense } from 'react';
+import { Tabs } from '@/components/tabs/tabs';
+import Experiencia from '@/components/tabs/tab1/experiencia';
 
 export default async function ProjectPage({ params: { locale } }: ProjectPageProps) {
     unstable_setRequestLocale(locale);
@@ -40,6 +42,18 @@ export default async function ProjectPage({ params: { locale } }: ProjectPagePro
                     }
                 </section>
             </Suspense>
+            <section className='h-screen w-11/12 border-2 border-indigo-500 mx-auto mb-8'>
+                <Tabs
+                    tabs={[
+                        { title: "Experiencia", value: "1", content: <Experiencia /> },
+                        { title: "Formación", value: "2", content: <div>Esta es la segunda pestaña</div> }
+                    ]}
+                    containerClassName='h-min w-full'
+                    tabClassName="px-6 py-2 bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-all duration-300 ease-in-out rounded-t-md"
+                    activeTabClassName="bg-white dark:bg-zinc-900 shadow-lg border-b-2 border-blue-500 text-blue-600 dark:text-blue-300"
+                    contentClassName='w-full mt-16 p-8 bg-white dark:bg-zinc-900 rounded-md shadow-md max-h-[calc(120vh-150px)] overflow-y-auto'
+                />
+            </section>
         </main>
     );
 }
