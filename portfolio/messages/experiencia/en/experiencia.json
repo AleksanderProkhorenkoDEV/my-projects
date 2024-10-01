@@ -1,4 +1,39 @@
 {
-    "Ecope": {},
-    "Empere":{}
+    "Ecope": {
+        "puesto": "Full Stack Developer - May 2024 - June 2024",
+        "empresa": "Ecope",
+        "imagen": "ecope.png",
+        "title": "Tasks performed:",
+        "e-1": "Dockerization of the application on Linux system",
+        "e-2": "Creation of backends with PHP specifically in the Laravel 11 framework.",
+        "e-3": "Use of TDD methodology for the creation of clean code.",
+        "e-4": "Creation of full rest api and graphQL.",
+        "e-5": "Creation of Unit Tets with PHPUnit.",
+        "e-6": "Relational database management: MySQL",
+        "e-7": "Use of Agile methodologies, project management with Jira and Github.",
+        "e-8": "Creation and management of JWT as well as user and role management using Laravel Spatie.",
+        "e-9": "Creation of frontend in Nextjs 14.",
+        "e-10": "Creation and management of custom hooks.",
+        "e-11": "Creation and reuse of components in Nextjs 14.",
+        "e-12": "Use of authentication libraries such as Nextj Auth."
+    },
+    "Empere": {
+        "puesto": "Freelance Full Stack Ecommerce Developer - June 2024 - Actual",
+        "empresa": "Empere Nail",
+        "imagen": "emperenails.png",
+        "title": "Tasks performed:",
+        "e-1": "Dockerization of the application on Windows system.",
+        "e-2": "Creation of backends with PHP specifically in the Laravel 11 framework",
+        "e-3": "Use of TDD methodology for the creation of clean code.",
+        "e-4": "Creation of full rest api.",
+        "e-5": "Creation of Unit Tets with PHPUnit.",
+        "e-6": "Relational database management: MySQL.",
+        "e-7": "Use of Agile methodologies, project management with Jira and Github.",
+        "e-8": "Creation and management of JWT as well as user and role management using Laravel Spatie.",
+        "e-9": "Creation of frontend in Nextjs 14.",
+        "e-10": "Creation and management of custom hooks.",
+        "e-11": "Creation of frontend in Nextjs 14.",
+        "e-12": "Use of authentication libraries such as Nextj Auth.",
+        "e-13": "Creating a digital POS with Laravel stripe."
+    }
 }

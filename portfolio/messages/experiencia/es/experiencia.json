@@ -1,4 +1,39 @@
 {
-    "Ecope": {},
-    "Empere": {}
+    "Ecope": {
+        "puesto": "Desarrollador Full Stack - Mayo 2024 - Junio 2024",
+        "empresa": "Ecope",
+        "imagen": "ecope logo",
+        "title": "Tareas realizadas:",
+        "e-1": "Dockerización de la aplicación en sistema Linux.",
+        "e-2": "Creación de backends con PHP especificamente en el framework Laravel 11.",
+        "e-3": "Uso de metodología TDD para la creación de código limpio.",
+        "e-4": "Creación de api full rest y graphQL.",
+        "e-5": "Creación de Tets unitarios con PHPUnit.",
+        "e-6": "Gestión de base de datos relacionales: MySQL.",
+        "e-7": "Uso de metodologias Agiles, gestión de proyecto con Jira y Github.",
+        "e-8": "Creación y gestión de JWT además de gestión de usuarios y roles mediante Laravel Spatie.",
+        "e-9": "Creación de frontend en Nextjs 14.",
+        "e-10": "Creación y gestión de custom hooks.",
+        "e-11": "Creación y reutilización de componentes  en Nextjs 14.",
+        "e-12": "Uso de librerias de autenticación como Nextj Auth."
+    },
+    "Empere": {
+        "puesto": "Desarrollador Full Stack Freelance Ecommerce - Junio 2024 - Actual",
+        "empresa": "Empere Nail",
+        "imagen": "emperenails logo",
+        "title": "Tareas realizadas:",
+        "e-1": "Dockerización de la aplicación en sistema Windows.",
+        "e-2": "Creación de backend con PHP especificamente en el framework Laravel 11.",
+        "e-3": "Uso de metodología TDD para la creación de código limpio.",
+        "e-4": "Creación de api full rest.",
+        "e-5": "Creación de Tets unitarios con PHPUnit.",
+        "e-6": "Gestión de base de datos relacionales: MySQL.",
+        "e-7": "Uso de metodologias Agiles, gestión de proyecto con Jira y Github.",
+        "e-8": "Creación y gestión de JWT además de gestión de usuarios y roles mediante Laravel Spatie.",
+        "e-9": "Creación de frontend en Nextjs 14.",
+        "e-10": "Creación y gestión de custom hooks.",
+        "e-11": "Creación y reutilización de componentes  en Nextjs 14.",
+        "e-12": "Uso de librerias de autenticación como Nextj Auth.",
+        "e-13": "Creación de TPV digial con Laravel stripe."
+    }
 }
