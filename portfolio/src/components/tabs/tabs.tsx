@@ -88,7 +88,7 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full max-h-[calc(100vh-150px)] overflow-y-auto"> {/* Added max height and scroll */}
+    <div className="relative w-full h-full max-h-[calc(110vh-150px)] overflow-y-auto">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
