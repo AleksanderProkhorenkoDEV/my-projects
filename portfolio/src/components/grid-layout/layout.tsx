@@ -1,16 +1,11 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import { Card } from "@/types";
 
-type Card = {
-    id: number;
-    content: JSX.Element | React.ReactNode | string;
-    className: string;
-    thumbnail: string;
-};
+
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
     const [selected, setSelected] = useState<Card | null>(null);
