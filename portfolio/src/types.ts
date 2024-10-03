@@ -17,5 +17,12 @@ export interface Cards {
 }
 
 export interface Projects {
-    [key: string] : Cards,
+    [key: string]: Cards,
 }
+
+export interface Card {
+    id: number;
+    content: JSX.Element | React.ReactNode | string;
+    className: string;
+    thumbnail: string;
+};
