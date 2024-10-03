@@ -4,9 +4,10 @@ import { Grid } from '@/components/grid-layout/grid-layout';
 import { bebas, montserrat } from '@/assets/fonts';
 import { useTranslations } from 'next-intl';
 import { ProjectPageProps } from '@/types';
-import { Novatrix } from 'uvcanvas';    
+import { Novatrix } from 'uvcanvas';
 import Image from 'next/image';
 import Link from 'next/link';
+import cards from '@/components/grid-layout/Home/Cards';
 
 
 export default function HomePage({ params: { locale } }: ProjectPageProps) {
@@ -35,7 +36,7 @@ export default function HomePage({ params: { locale } }: ProjectPageProps) {
                 <Link href={'/contact'} className="shadow-[inset_0_0_0_2px_#2D2A32] tracking-wide hover:shadow-[inset_0_0_0_2px_#2667FF] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-main-color hover:text-white dark:text-neutral-200 transition duration-200">{t('contact')}</Link>
             </section>
 
-            <Grid />
+            <Grid cards={cards} showTitle/>
         </main>
     );
 }
