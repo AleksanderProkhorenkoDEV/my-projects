@@ -13,9 +13,14 @@ const Baner = () => {
                 <p className="text-pretty text-lg leading-relaxed">
                     {t("message")}
                 </p>
-                <Link href={'/contact'} className="shadow-[inset_0_0_0_2px_#fff] tracking-wide hover:shadow-[inset_0_0_0_2px_#1040b0] hover:scale-105 transform transition-all duration-300 text-white px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-white hover:text-main-color dark:text-neutral-200">
-                    {t("contacta")}
-                </Link>
+                <div className="flex gap-4">
+                    <Link href={'/contact'} className="shadow-[inset_0_0_0_2px_#fff] tracking-wide hover:shadow-[inset_0_0_0_2px_#1040b0] hover:scale-105 transform transition-all duration-300 text-white px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-white hover:text-main-color dark:text-neutral-200">
+                        {t("contacta")}
+                    </Link>
+                    <a href={'/assets/cv/Spanish_Full_Stack_cv.pdf'} download="aleksander_cv.pdf" className="shadow-[inset_0_0_0_2px_#fff] tracking-wide hover:shadow-[inset_0_0_0_2px_#1040b0] hover:scale-105 transform transition-all duration-300 text-white px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-white hover:text-main-color dark:text-neutral-200">
+                        {t("cv")}
+                    </a>
+                </div>
             </section>
 
         </div>
