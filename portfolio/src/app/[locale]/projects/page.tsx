@@ -8,6 +8,7 @@ import Baner from '@/components/baner/baner';
 import OwnCard from '@/components/card/card';
 import { Velustro } from "uvcanvas"
 import { Suspense } from 'react';
+import Formacion from '@/components/tabs/tab2/estudios';
 
 export default async function ProjectPage({ params: { locale } }: ProjectPageProps) {
     unstable_setRequestLocale(locale);
@@ -46,12 +47,12 @@ export default async function ProjectPage({ params: { locale } }: ProjectPagePro
                 <Tabs
                     tabs={[
                         { title: "Experiencia", value: "1", content: <Experiencia locale={locale}/> },
-                        { title: "Formación", value: "2", content: <div>Esta es la segunda pestaña</div> }
+                        { title: "Formación", value: "2", content: <Formacion /> }
                     ]}
                     containerClassName='h-min w-full'
-                    tabClassName="px-6 py-2 bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-all duration-300 ease-in-out rounded-t-md"
-                    activeTabClassName="bg-white dark:bg-zinc-900 shadow-lg border-b-2 border-blue-500 text-blue-600 dark:text-blue-300"
-                    contentClassName='w-full mt-16 p-8  rounded-md shadow-md bg-[#ededeb] overflow-y-auto'
+                    tabClassName="px-6 py-2 bg-gray-100 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-all duration-300 ease-in-out rounded-t-md"
+                    activeTabClassName="bg-main-color bg-opacity-75 dark:bg-zinc-900 text-white"
+                    contentClassName='w-full h-full mt-16 p-8  rounded-md shadow-md bg-[#ededeb] overflow-y-auto'
                 />
             </section>
         </main>
