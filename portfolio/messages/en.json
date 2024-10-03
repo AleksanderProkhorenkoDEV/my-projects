@@ -5,7 +5,7 @@
         "www": "Working Worldwide",
         "work": "Open to Work",
         "scroll": "Get in Touch!",
-        "contact":"Contact!"
+        "contact": "Contact!"
     },
     "nav": {
         "me": "About me",
@@ -24,40 +24,68 @@
         "label": "Change language",
         "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
     },
-    "card-bike":{
+    "card-bike": {
         "title": "My Passion",
         "description": "Motorbikes are something that can give you freedom and happiness, simply with the sound of the engine or its aesthetics, they are fine and elegant."
     },
-    "card-me":{
+    "card-me": {
         "title": "Me: Aleksander",
-        "data":"I'm from Granada, Spain, I'm 20 years old and I'm still growing!",
+        "data": "I'm from Granada, Spain, I'm 20 years old and I'm still growing!",
         "description": "I am a very proactive person, I like learning and discovering new things, apart from web development I also like videogames and playing sports."
     },
-    "card-web":{
+    "card-web": {
         "title": "Web development",
         "description": "It's something that didn't really appeal to me at first, but in the end I ended up studying it and it's one of my passions and hobbies to this day because I enjoy it and I have a good time, because you don't stop learning all the time."
     },
-    "card-curiosidad":{
+    "card-curiosidad": {
         "title": "Curiosity",
         "description": "I think that in order to be successful, apart from making an effort and dedicating time to it, if you are not a curious person and you don't want to learn new things and it doesn't attract your attention, you can't do it because that means you don't like it."
     },
-    "grid":{
-        "title":"Behind the Code",
-        "description":"by Aleksander"
+    "grid": {
+        "title": "Behind the Code",
+        "description": "by Aleksander"
     },
-    "footer":{
+    "footer": {
         "location": "Granada, Spain",
         "sub-footer": "This page has been developed and designed by Aleksander",
-        "seneca":"Luck is what happens when preparation coincides with opportunity.",
-        "links":"Links of interest"
+        "seneca": "Luck is what happens when preparation coincides with opportunity.",
+        "links": "Links of interest"
     },
-    "projects":{
-        "hero-title":"Project area",
+    "projects": {
+        "hero-title": "Project area",
         "hero-text": "Here you can see my art."
     },
-    "banner":{
+    "banner": {
         "title": "Would you like to have the best website?",
-        "message":"So let's get in touch and let's solve your problems, click on the button and you will be able to access my curriculum and my contact details!",
-        "contacta": "Talk to me!"
+        "message": "So let's get in touch and let's solve your problems, click on the button and you will be able to access my curriculum and my contact details!",
+        "contacta": "Talk to me!",
+        "cv": "Download mi CV!"
+    },
+    "zaidin_vergeles": {
+        "title": "Higher Degree - Web Application Development",
+        "description": "In 2023 I graduated in web application development at IES Zaidin Vergeles, Granada, Spain. I did my internship in Ecope a company in Granada, in this degree I learned Javascript, PHP, Wordpress, Laravel, Java, MySQL, PostgreSQL."
+    },
+    "salesianos": {
+        "title": "Baccalaureate - Scientific Technical",
+        "description": "In 2022 I graduated in technological sciences at the Salesianos centre, Granada, Spain."
+    },
+    "openwebinars": {
+        "title": "Certifications",
+        "o-4": "GraphQL course and implementation of apis with Apollo.",
+        "o-5": "Introduction to docker course.",
+        "o-6": "Javascript Fundamentals Course.",
+        "o-7": "React course for beginners.",
+        "o-8": "React intermediate level course.",
+        "o-9": "Typescript course.",
+        "o-10": "Wordpress Cybersecurity Course.",
+        "o-11": "Wordpress course: installation and configuration.",
+        "o-12": "Wordpress course: CRM, membership, subscriptions and multi-language.",
+        "o-13": "Wordpess course: Installation and configuration."
+    },
+    "openwebinars-2": {
+        "title": "Aptitude tests.",
+        "o-1": "PHP proficiency test - advanced level.",
+        "o-2": "Javascript proficiency test - advanced level.",
+        "o-3": "Java Proficiency Test - advanced level."
     }
 }

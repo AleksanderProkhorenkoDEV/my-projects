@@ -58,6 +58,35 @@
     "banner":{
         "title": "¿Te gustaría tener la mejor página web?",
         "message":"Pues pongamonos en contacto y demosle solución a tus problemas, pulsa en el botón y podras acceder a mi curriculum y a mis datos de contacto!!",
-        "contacta": "Hablame!"
+        "contacta": "Hablame!",
+        "cv": "Descarga mi CV!"
+    },
+    "zaidin_vergeles":{
+        "title": "Grado superior - Desarrollo de aplicaciones Web",
+        "description": "En 2023 me gradue en desarrollo de aplicaciones web en el centro IES Zaidin Vergeles, Granada, España. Realice las practicas en Ecope una empresa ded granada, en este grado aprendí Javascript, PHP, Wordpress, Laravel, Java, MySQL, PostgreSQL."
+    },
+    "salesianos":{
+        "title": "Bachillerato - Cientifico Técnico",
+        "description": "En 2022 me gradue en ciencias tecnologicas en el centro Salesianos, Granada, España."
+    },
+    "openwebinars":{
+        "title": "Certificaciones.",
+        "o-4": "Curso de GraphQL e implementación de apis con Apollo.",
+        "o-5": "Curso Introducción a docker.",
+        "o-6": "Curso Fundamentos de Javascript.",
+        "o-7": "Curso React para principiantes.",
+        "o-8": "Curso React nivel intermedio.",
+        "o-9": "Curso Typescript.",
+        "o-10": "Curso Ciberseguridad de Wordpress.",
+        "o-11": "Curso Wordpress: instalación y configuración.",
+        "o-12": "Curso Wordpress: CRM, membresía, suscripciones y multidioma.",
+        "o-13": "Curso Wordpess: Instalación y configuración."
+    },
+    "openwebinars-2":{
+        "title":"Test de aptitudes",
+        "o-1": "Test de aptitud PHP - nivel avanzado.",
+        "o-2": "Test de aptitud Javascript - nivel avanzado.",
+        "o-3": "Test de aptitud Java - nivel avanzado."
     }
+
 }
