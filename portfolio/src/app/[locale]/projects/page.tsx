@@ -9,6 +9,7 @@ import OwnCard from '@/components/card/card';
 import { Velustro } from "uvcanvas"
 import { Suspense } from 'react';
 import Formacion from '@/components/tabs/tab2/estudios';
+import Stack from '@/components/tabs/tab3/Stack';
 
 export default async function ProjectPage({ params: { locale } }: ProjectPageProps) {
     unstable_setRequestLocale(locale);
@@ -47,7 +48,8 @@ export default async function ProjectPage({ params: { locale } }: ProjectPagePro
                 <Tabs
                     tabs={[
                         { title: "Experiencia", value: "1", content: <Experiencia locale={locale}/> },
-                        { title: "Formación", value: "2", content: <Formacion /> }
+                        { title: "Formación", value: "2", content: <Formacion /> },
+                        { title: "Stack teconlogico", value: "3", content: <Stack />}
                     ]}
                     containerClassName='h-min w-full'
                     tabClassName="px-6 py-2 bg-gray-100 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-all duration-300 ease-in-out rounded-t-md"
