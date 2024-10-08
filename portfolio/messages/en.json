@@ -87,5 +87,11 @@
         "o-1": "PHP proficiency test - advanced level.",
         "o-2": "Javascript proficiency test - advanced level.",
         "o-3": "Java Proficiency Test - advanced level."
+    },
+    "stack": {
+        "first": "Developing personal projects",
+        "second": "Learning Nextjs as main and Java Spring boot",
+        "third": "Contact me by",
+        "four": "or via"
     }
 }

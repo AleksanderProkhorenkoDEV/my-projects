@@ -5,7 +5,7 @@
         "www": "Trabajando en todo el mundo",
         "work": "Buscando Trabajo",
         "scroll": "Contactemos!",
-        "contact":"Contacta!"
+        "contact": "Contacta!"
     },
     "nav": {
         "me": "Conoceme",
@@ -24,52 +24,52 @@
         "label": "Cambiar idioma",
         "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
     },
-    "card-bike":{
+    "card-bike": {
         "title": "Mi pasión",
         "description": "Las motos es algo que te puede dar libertad y felicidad, simplente con el sonido del motor o su estetica, son finas y elegantes"
     },
-    "card-me":{
+    "card-me": {
         "title": "Yo: Aleksander",
-        "data":"Soy de Granada, España, tengo 20 años y ¡sigo creciendo!",
+        "data": "Soy de Granada, España, tengo 20 años y ¡sigo creciendo!",
         "description": "Soy una persona bastante proactiva, me gusta mucho aprender y descubrir cosas nuevas, aparte del desarrollo web también me gustan los videojuegos y hacer deporte.."
     },
-    "card-web":{
+    "card-web": {
         "title": "Desarrollo Web",
         "description": "Es una cosa que al principio no me llamaba mucho, pero al final acabe estudiándolo y es una de mis pasiones y mis hobbies a día de hoy ya que disfruto con esto y me lo paso bien, porque no paras de aprender continuamente."
     },
-    "card-curiosidad":{
+    "card-curiosidad": {
         "title": "Curiosidad",
         "description": "Pienso que para poder tener éxito a parte de esforzarte y dedicarle tiempo, si no eres una persona curiosa y no tienes ganas de aprender cosas nuevas y no te llama la atención no puedes hacerlo porque eso significa que no te gusta."
     },
-    "grid":{
-        "title":"Detras del código",
-        "description":"de Aleksander"
+    "grid": {
+        "title": "Detras del código",
+        "description": "de Aleksander"
     },
-    "footer":{
+    "footer": {
         "location": "Granada, España",
-        "sub-footer":"Esta página a sido desarrollada y diseñada por Aleksander",
-        "seneca":"La suerte es lo que ocurre cuando la preparación coincide con la oportunidad.",
-        "links":"Enlaces de interes"
+        "sub-footer": "Esta página a sido desarrollada y diseñada por Aleksander",
+        "seneca": "La suerte es lo que ocurre cuando la preparación coincide con la oportunidad.",
+        "links": "Enlaces de interes"
     },
-    "projects":{
-        "hero-title":"Zona de proyectos",
+    "projects": {
+        "hero-title": "Zona de proyectos",
         "hero-text": "Aquí podréis ver mi arte."
     },
-    "banner":{
+    "banner": {
         "title": "¿Te gustaría tener la mejor página web?",
-        "message":"Pues pongamonos en contacto y demosle solución a tus problemas, pulsa en el botón y podras acceder a mi curriculum y a mis datos de contacto!!",
+        "message": "Pues pongamonos en contacto y demosle solución a tus problemas, pulsa en el botón y podras acceder a mi curriculum y a mis datos de contacto!!",
         "contacta": "Hablame!",
         "cv": "Descarga mi CV!"
     },
-    "zaidin_vergeles":{
+    "zaidin_vergeles": {
         "title": "Grado superior - Desarrollo de aplicaciones Web",
         "description": "En 2023 me gradue en desarrollo de aplicaciones web en el centro IES Zaidin Vergeles, Granada, España. Realice las practicas en Ecope una empresa ded granada, en este grado aprendí Javascript, PHP, Wordpress, Laravel, Java, MySQL, PostgreSQL."
     },
-    "salesianos":{
+    "salesianos": {
         "title": "Bachillerato - Cientifico Técnico",
         "description": "En 2022 me gradue en ciencias tecnologicas en el centro Salesianos, Granada, España."
     },
-    "openwebinars":{
+    "openwebinars": {
         "title": "Certificaciones.",
         "o-4": "Curso de GraphQL e implementación de apis con Apollo.",
         "o-5": "Curso Introducción a docker.",
@@ -82,11 +82,16 @@
         "o-12": "Curso Wordpress: CRM, membresía, suscripciones y multidioma.",
         "o-13": "Curso Wordpess: Instalación y configuración."
     },
-    "openwebinars-2":{
-        "title":"Test de aptitudes",
+    "openwebinars-2": {
+        "title": "Test de aptitudes",
         "o-1": "Test de aptitud PHP - nivel avanzado.",
         "o-2": "Test de aptitud Javascript - nivel avanzado.",
         "o-3": "Test de aptitud Java - nivel avanzado."
+    },
+    "stack": {
+        "first": "Desarrollando proyectos personales",
+        "second": "Aprendiendo Nextjs como principal y Java Spring boot",
+        "third": "Contacta conmigo por",
+        "four": "O via"
     }
-
 }
