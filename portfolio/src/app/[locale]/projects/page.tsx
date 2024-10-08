@@ -1,15 +1,15 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import TextGenerateEffect from '@/components/anima-text/animate-text';
 import Experiencia from '@/components/tabs/tab1/experiencia';
-import { Cards, ProjectPageProps, Projects } from '@/types';
+import Formacion from '@/components/tabs/tab2/estudios';
+import { ProjectPageProps, Projects } from '@/types';
 import { bebas, montserrat } from '@/assets/fonts';
+import Stack from '@/components/tabs/tab3/Stack';
 import { Tabs } from '@/components/tabs/tabs';
 import Baner from '@/components/baner/baner';
 import OwnCard from '@/components/card/card';
 import { Velustro } from "uvcanvas"
 import { Suspense } from 'react';
-import Formacion from '@/components/tabs/tab2/estudios';
-import Stack from '@/components/tabs/tab3/Stack';
 
 export default async function ProjectPage({ params: { locale } }: ProjectPageProps) {
     unstable_setRequestLocale(locale);
