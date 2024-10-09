@@ -94,5 +94,10 @@
         "third": "Contact me by",
         "four": "or via",
         "five": "Technical skills"
+    },
+    "contact": {
+        "title": "Let's work together!",
+        "vision": "Your vision is our priority.",
+        "sub-title": "I'm excited to explore new opportunities and build projects together that make a difference."
     }
 }

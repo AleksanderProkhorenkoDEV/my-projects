@@ -94,5 +94,10 @@
         "third": "Contacta conmigo por",
         "four": "O via",
         "five": "Habilidades técnicas"
+    },
+    "contact": {
+        "title": "Trabajemos juntos!",
+        "vision": "Tu visión es nuestra prioridad.",
+        "sub-title": "Estoy emocionados de explorar nuevas oportunidades y construir juntos proyectos que marquen la diferencia."
     }
 }
