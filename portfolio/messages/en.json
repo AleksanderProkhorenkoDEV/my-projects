@@ -99,5 +99,12 @@
         "title": "Let's work together!",
         "vision": "Your vision is our priority.",
         "sub-title": "I'm excited to explore new opportunities and build projects together that make a difference."
+    },
+    "formulario":{
+        "row1": "Your email address",
+        "row2": "Mesagge",
+        "row3": "Send email",
+        "succes": "Email send succesfuly",
+        "error": "The email could not be sent, please try again."
     }
 }

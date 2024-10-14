@@ -99,5 +99,12 @@
         "title": "Trabajemos juntos!",
         "vision": "Tu visión es nuestra prioridad.",
         "sub-title": "Estoy emocionados de explorar nuevas oportunidades y construir juntos proyectos que marquen la diferencia."
+    },
+    "formulario": {
+        "row1": "Tu correo",
+        "row2": "mensaje",
+        "row3": "Enviar email",
+        "succes": "Email enviado correctamente.",
+        "error": "No se ha podido enviar el email, intentalo de nuevo."
     }
 }
