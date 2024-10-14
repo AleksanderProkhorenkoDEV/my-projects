@@ -5,6 +5,7 @@ import Return from '@/components/return';
 import Nav from '@/components/nav';
 import { locales } from '@/config';
 import { ReactNode } from 'react';
+import { Toaster } from 'sonner';
 
 
 type Props = {
@@ -42,6 +43,7 @@ export default async function LocaleLayout({
       <body className={'flex h-full flex-col'}>
         <NextIntlClientProvider messages={messages}>
           <Nav />
+          <Toaster position="bottom-right"  richColors/>
           {children}
           <Return />
           <Footer />
