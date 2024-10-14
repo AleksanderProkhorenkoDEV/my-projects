@@ -1,18 +1,24 @@
 'use client'
 
 import { useForm, ValidationError } from '@formspree/react';
+import { toast } from 'sonner';
 
-const FormContact = () => {
+const FormContact = ({email_title, message, buton_text, succes_text, error_text}: {email_title:string, message:string, buton_text:string, succes_text:string, error_text:string}) => {
 
     const [state, handleSubmit] = useForm("mrbgzdbo");
+
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        toast.success(succes_text)
     }
-    
+
+    if(state.errors){
+        toast.error(error_text)
+    }
+
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='flex flex-col gap-4 w-11/12 '>
             <label htmlFor="email">
-                Email Address
+                {email_title}
             </label>
             <input
                 id="email"
@@ -26,7 +32,7 @@ const FormContact = () => {
             />
             <textarea
                 id="message"
-                name="message"
+                name={message}
             />
             <ValidationError
                 prefix="Message"
@@ -34,7 +40,7 @@ const FormContact = () => {
                 errors={state.errors}
             />
             <button type="submit" disabled={state.submitting}>
-                Submit
+                {buton_text}
             </button>
         </form>
     );

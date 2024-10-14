@@ -9,8 +9,9 @@ import Image from 'next/image';
 export default function ContactPage({ params: { locale } }: ProjectPageProps) {
     unstable_setRequestLocale(locale);
     const t = useTranslations('contact');
+    const f = useTranslations('formulario');
     return (
-        <main>
+        <main className='mb-8'>
             <section className='flex flex-col gap-8 items-center w-11/12 m-auto p-4'>
                 <div className='flex items-center justify-around gap-16'>
                     <div className='flex flex-col gap-4 max-w-xl'>
@@ -26,11 +27,21 @@ export default function ContactPage({ params: { locale } }: ProjectPageProps) {
                     </div>
                 </div>
                 <div className='min-h-min w-fit'>
-                    <Image src={"/assets/icons/doble-arrow-scroll-svg.svg"} height={30} width={30} alt={"Arrow icon"}  className='scroll-animation'/>
+                    <Image src={"/assets/icons/doble-arrow-scroll-svg.svg"} height={30} width={30} alt={"Arrow icon"} className='scroll-animation' />
                 </div>
             </section>
-            <section>
-                <FormContact />
+            <section className='flex gap-4 justify-around  w-11/12 min-h-96 m-auto border-purple-800 border-2'>
+                <div className='flex flex-1 border-2 border-red-800'>
+
+                </div>
+                <div className='flex flex-1 border-2 border-blue-800'>
+                    <FormContact
+                        email_title={f("row1")}
+                        message={f("row2")}
+                        buton_text={f("row3")}
+                        succes_text={f("succes")}
+                        error_text={f("error")} />
+                </div>
             </section>
         </main>
     );
