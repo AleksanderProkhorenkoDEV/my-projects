@@ -5,13 +5,15 @@ import { ProjectPageProps } from '@/types';
 import { bebas } from '@/assets/fonts';
 import { Velustro } from 'uvcanvas';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ContactPage({ params: { locale } }: ProjectPageProps) {
     unstable_setRequestLocale(locale);
     const t = useTranslations('contact');
     const f = useTranslations('formulario');
+    const i = useTranslations('información');
     return (
-        <main className='mb-8'>
+        <main className='mb-8 flex flex-col gap-8'>
             <section className='flex flex-col gap-8 items-center w-11/12 m-auto p-4'>
                 <div className='flex items-center justify-around gap-16'>
                     <div className='flex flex-col gap-4 max-w-xl'>
@@ -30,18 +32,49 @@ export default function ContactPage({ params: { locale } }: ProjectPageProps) {
                     <Image src={"/assets/icons/doble-arrow-scroll-svg.svg"} height={30} width={30} alt={"Arrow icon"} className='scroll-animation' />
                 </div>
             </section>
-            <section className='flex gap-4 justify-around  w-11/12 min-h-96 m-auto border-purple-800 border-2'>
-                <div className='flex flex-1 border-2 border-red-800'>
+            <section className='flex gap-8 justify-around w-11/12 min-h-96 m-auto p-8 rounded-lg'>
+                <div className='flex flex-1 flex-col gap-6 justify-center w-fit'>
+                    <p className={`${bebas.className} tracking-[0.25rem] text-2xl font-bold text-main-color`}>
+                        {i('title1')}
+                    </p>
 
+                    <div className='ml-4 flex gap-2 items-center text-gray-700'>
+                        <p className='font-semibold text-lg text-bold'>{i('horario')}</p>
+                        <p className='text-base'>{i('dias')}</p>
+                    </div>
+
+                    <p className={`${bebas.className} tracking-[0.25rem] text-2xl font-bold text-main-color`}>
+                       {i('title2')}
+                    </p>
+                    <div className='ml-4 flex flex-col gap-2 text-gray-700'>
+                        <p className='flex items-center font-bold'>
+                            Email: <Link href="mailto:aprokhorenkodev@gmail.com" className='text-blue-600 hover:underline ml-4'>aprokhorenkodev@gmail.com</Link>
+                        </p>
+                        <p className='flex items-center font-bold'>
+                            LinkedIn: <Link href="https://www.linkedin.com/in/aleksander-trujillo-prokhorenko-90a066299/" target="_blank" className='text-blue-600 hover:underline ml-4'>aleksander-trujillo-prokhorenko</Link>
+                        </p>
+                    </div>
                 </div>
-                <div className='flex flex-1 border-2 border-blue-800'>
+
+                <div className='border-l border-indigo-800 h-full'></div>
+
+                <div className='flex flex-1 items-center justify-center p-6 rounded-lg'>
                     <FormContact
                         email_title={f("row1")}
                         message={f("row2")}
                         buton_text={f("row3")}
                         succes_text={f("succes")}
-                        error_text={f("error")} />
+                        error_text={f("error")}
+                    />
                 </div>
+            </section>
+            <section className='flex items-center justify-center'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50860.94557461577!2d-3.632471259083814!3d37.18100750305445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce62d32c27d%3A0x9258f79dd3600d72!2sGranada!5e0!3m2!1ses!2ses!4v1729006054009!5m2!1ses!2ses"
+                    width="100%"
+                    height="600"
+                    loading="lazy">
+
+                </iframe>
             </section>
         </main>
     );
