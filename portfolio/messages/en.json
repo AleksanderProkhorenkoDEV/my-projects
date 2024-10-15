@@ -106,5 +106,11 @@
         "row3": "Send email",
         "succes": "Email send succesfuly",
         "error": "The email could not be sent, please try again."
+    },
+    "información":{
+        "title1": "Contact information",
+        "horario": "Timetable",
+        "dias": "Monday to Friday from 09:00am to 20:00pm",
+        "title2": "Methods of contact"
     }
 }

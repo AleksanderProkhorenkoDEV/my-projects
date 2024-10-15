@@ -106,5 +106,11 @@
         "row3": "Enviar email",
         "succes": "Email enviado correctamente.",
         "error": "No se ha podido enviar el email, intentalo de nuevo."
+    },
+    "información": {
+        "title1": "Información de contacto:",
+        "horario": "Horario",
+        "dias": "Lunes a Viernes de 09:00am hasta 20:00pm",
+        "title2": "Metodos para contactarme:"
     }
 }
