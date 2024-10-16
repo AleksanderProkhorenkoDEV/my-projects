@@ -25,8 +25,16 @@ const config: Config = {
           '50%': { opacity: '1' },
           '100%': { opacity: '0' },
         },
+      },
+      screens: {
+        '1k7': { 'max': '1750px' },
+        '1k5': { 'max': '1600px' },
+        '1k3': { 'max': '1380px'},
+        '1k2': { 'max': '1280px'},
+        '500': { 'max': '600px'}
       }
     },
+
   },
   darkMode: "class", // Si estás usando el modo oscuro
   plugins: [nextui()], // Incluye el plugin NextUI

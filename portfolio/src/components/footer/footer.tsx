@@ -29,13 +29,13 @@ const Footer = () => {
     }
 
     return (
-        <footer className={`bg-dark-bg min-h-[30rem] flex flex-col items-center text-white ${montserrat.className}`}>
-            <section className="flex-1 flex items-center justify-end border-b w-11/12 justify-between">
+        <footer className={`bg-dark-bg min-h-[30rem] w-full flex flex-col items-center text-white ${montserrat.className} 1k3:min-h-fit `}>
+            <section className="flex-1 flex items-center justify-end border-b w-11/12 justify-between 1k3:flex-1 1k3:p-8">
                 <p>{make_date_formed() + '  ' + make_time_formed()}</p>
                 <p className="text-end">{t('location')}</p>
             </section>
-            <section className="flex-[5] flex flex gap-2 justify-between p-8">
-                <article className="w-[30rem] p-8 flex flex-col gap-4 bg-[#3A3741] h-full rounded-md shadow-[0_4px_10px_rgba(255,255,255,0.1)]">
+            <section className="flex-[5] flex flex gap-2 justify-between p-8  1k3:flex-[3] 1k2:justify-between 1k2:w-full 1k2:flex-col 1k2:items-center 1k2:gap-8">
+                <article className="w-[30rem] p-8 flex flex-col gap-4 bg-[#3A3741] h-full rounded-md shadow-[0_4px_10px_rgba(255,255,255,0.1)] 1k7:w-[25rem] 1k5:w-[22rem] 1k2-min-w-min">
                     <p className={`uppercase ${bebas.className} text-4xl w-11/12 border-b text-dark-main-color`}>Menu</p>
                     <div className="flex flex-col gap-4">
                         <NavigationLink href="/">{n('me')}</NavigationLink>
@@ -43,18 +43,18 @@ const Footer = () => {
                         <NavigationLink href="/contact">{n('contact')}</NavigationLink>
                     </div>
                 </article>
-                <article className="w-full flex flex-col items-center justify-center">
-                    <h2 className={`uppercase text-7xl ${bebas.className} tracking-[.25em] text-transparent bg-clip-text bg-gradient-to-r from-dark-main-color to-main-color mb-2`}>APROKHORENKODEV</h2>
-                    <p className={`text-4xl ${montserrat_ligth.className}  font-light mb-6`}>{f('title')}</p>
+                <article className="w-full flex flex-col items-center justify-center 1k3:min-w-min 1k2:hidden">
+                    <h2 className={`uppercase text-7xl ${bebas.className} tracking-[.25em] text-transparent bg-clip-text bg-gradient-to-r from-dark-main-color to-main-color mb-2 1k5:text-6xl 1k3:text-4xl`}>APROKHORENKODEV</h2>
+                    <p className={`text-4xl ${montserrat_ligth.className}  font-light mb-6 1k3:text-2xl`}>{f('title')}</p>
                     <blockquote className="flex flex-col items-center gap-4">
                         "{t("seneca")}"
                         <cite>– Séneca</cite>
                     </blockquote>
                 </article>
-                <article className="w-[30rem] flex flex-col gap-4 p-8 bg-[#3A3741] h-full rounded-md shadow-[0_4px_10px_rgba(255,255,255,0.1)]" >
+                <article className="w-[30rem] flex flex-col gap-4 p-8 bg-[#3A3741] h-full rounded-md shadow-[0_4px_10px_rgba(255,255,255,0.1)] 1k7:w-[25rem] 1k5:w-[22rem] 1k2-min-w-min" >
                     <p className={`uppercase ${bebas.className} text-4xl w-11/12 border-b text-main-color`}>{t("links")}</p>
                     <div className="flex flex-col gap-4 items-start justify-start ">
-                        <Link href="https://github.com/AleksanderProkhorenkoDEV" className="group flex gap-2 items-center justify-center w-1/2  py-2 ml-2">
+                        <Link href="https://github.com/AleksanderProkhorenkoDEV" className="group flex gap-2 items-center justify-center w-1/2  py-2 ml-2 w-fit">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" className="w-[34px] h-[34px]">
                                 <g>
                                     <path fillRule="evenodd" d="M64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365C106.545 20.56 87.497 1.512 64 1.512z" />
@@ -66,7 +66,7 @@ const Footer = () => {
                             </svg>
                             <p>Github</p>
                         </Link>
-                        <Link href="https://github.com/AleksanderProkhorenkoDEV" className="group flex gap-2 items-center justify-center w-1/2 py-2 ml-2">
+                        <Link href="https://github.com/AleksanderProkhorenkoDEV" className="group flex gap-2 items-center justify-center w-1/2 py-2 ml-2 w-fit">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1.04167in" viewBox="0 0 201 201" width="1.04167in" className="fill-current text-black group-hover:text-[#1040b0] transition-colors ease-in-out w-[24px] h-[24px]">
                                 <g id="Layer_x0020_1">
                                     <g id="_541895288">
@@ -84,7 +84,7 @@ const Footer = () => {
                     </div>
                 </article>
             </section>
-            <section className=" p-3 text-center bg-[#3A3741] w-full">
+            <section className=" p-3 text-center bg-[#3A3741] w-full 500:text-sm">
                 <p className={`${montserrat_ligth.className}`}>{t('sub-footer')}</p>
             </section>
         </footer>
