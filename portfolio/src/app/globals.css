@@ -137,18 +137,15 @@ table {
 
 
 ::-webkit-scrollbar {
-	height: 5px;
-	width: 5px;
-	background: var(--background);
+	display: none;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--accent);
-	-webkit-border-radius: 1ex;
+	display: none;
 }
 
 ::-webkit-scrollbar-corner {
-	background: var(--background);
+	display: none;
 }
 
 html {
@@ -220,6 +217,10 @@ html {
 	animation: scrollAnimation 1s infinite;
 }
 
+.rotate-horizontal {
+	animation: rotateY 3s infinite linear;
+}
+
 @keyframes scrollAnimation {
 
 	0%,
@@ -229,5 +230,17 @@ html {
 
 	50% {
 		transform: translateY(15px);
+	}
+}
+
+@keyframes rotateY {
+	0% {
+		transform: rotateY(0deg);
+
+	}
+
+	100% {
+		transform: rotateY(360deg);
+
 	}
 }

@@ -65,8 +65,8 @@ function ParallaxText({ children, baseVelocity = 20 }: ParallaxProps) {
      * dynamically generated number of children.
      */
     return (
-        <div className="parallax">
-            <motion.div className="scroller" style={{ x }}>
+        <div className="parallax ">
+            <motion.div className="scroller " style={{ x }}>
                 <span>{children} </span>
                 <span>{children} </span>
                 <span>{children} </span>
