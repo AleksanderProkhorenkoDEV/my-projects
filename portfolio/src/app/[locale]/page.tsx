@@ -32,7 +32,7 @@ export default function HomePage({ params: { locale } }: ProjectPageProps) {
                     <Novatrix />
                 </div>
                 <p className={`w-[75rem] text-end uppercase text-xl ${montserrat.className} tracking-wider 1k3:text-lg 1k2:text-base 1k2:w-[65rem] 1k:w-[55rem]  1k:absolute 1k:w-fit 1k:left-[30%] 1k:top-[70%] 600k:left-[18%] 600k:top-[65%] 600k:text-sm 400k:left-[12%] 300k:left-[6%]`}>Aleksander Trujillo Prokhorenko</p>
-                <article className='flex justify-between text-white w-full bg-[#2D2A32] py-6 px-10 uppercase mt-8 700k:flex-col 700k:items-center 700k:gap-'>
+                <article className='flex justify-between text-white w-full bg-[#2D2A32] py-6 px-10 uppercase mt-8 700k:flex-col 700k:items-center 700k:gap-4'>
                     <p>{t('location')}</p>
                     <div className='flex gap-2 justify-center items-center'><Image src={"/assets/icons/world.svg"} width={20} height={20} alt='World icon' /> <p>{t('www')}</p></div>
                     <div className='flex gap-2 justify-center items-center'><div className='w-2 h-2 bg-lime-600 animate-fade'></div><p >{t('work')}</p></div>
