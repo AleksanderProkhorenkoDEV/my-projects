@@ -84,7 +84,7 @@ const Footer = () => {
                     </div>
                 </article>
             </section>
-            <section className=" p-3 text-center bg-[#3A3741] w-full 500:text-sm">
+            <section className=" p-3 text-center bg-[#3A3741] w-full 500:text-sm 400k:text-xs">
                 <p className={`${montserrat_ligth.className}`}>{t('sub-footer')}</p>
             </section>
         </footer>

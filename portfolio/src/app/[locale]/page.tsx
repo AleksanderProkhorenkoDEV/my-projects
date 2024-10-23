@@ -15,8 +15,8 @@ export default function HomePage({ params: { locale } }: ProjectPageProps) {
     const t = useTranslations('HomePage');
     return (
         <main className='w-full flex flex-col gap-8 pb-8'>
-            <section className='w-full h-screen flex flex-col items-center justify-center gap-4 overflow-hidden'>
-                <h1 className={`w-[75rem] uppercase text-7xl ${bebas.className} tracking-wider z-20 1k3:text-6xl 1k2:text-4xl 1k2:w-[65rem] 1k:text-2xl 1k:w-[55rem] 1k:absolute 1k:left-[420px] 1k:top-[198px] 1k:w-fit`}>{t('title')}</h1>
+            <section className='w-full h-screen flex flex-col items-center justify-center gap-4 600k:mb-16'>
+                <h1 className={`w-[75rem] uppercase text-7xl ${bebas.className} tracking-wider z-20 1k3:text-6xl 1k2:text-4xl 1k2:w-[65rem] 1k:text-2xl 1k:w-[55rem] 1k:absolute 1k:left-[40%] 1k:top-[30%] 1k:w-fit 600k:left-[30%] 400k:left-[35%] 300k:left-[30%]`}>{t('title')}</h1>
                 <div className='relative w-[80rem] h-1/2 1k3:w-[70rem] 1k2:w-[60rem] 1k:w-[45rem] 1k:hidden'>
                     <div className='w-full h-full '>
                         <Novatrix />
@@ -28,11 +28,11 @@ export default function HomePage({ params: { locale } }: ProjectPageProps) {
                         width={250}
                         height={250}
                         alt='logo aleksander'
-                        className='absolute left-[400px] top-[298px]  rotate-horizontal' />
+                        className='absolute left-[35%] top-[40%]  rotate-horizontal 600k:left-[25%] 400k:left-[19%] 300k:left-[15%]' />
                     <Novatrix />
                 </div>
-                <p className={`w-[75rem] text-end uppercase text-xl ${montserrat.className} tracking-wider 1k3:text-lg 1k2:text-base 1k2:w-[65rem] 1k:w-[55rem]  1k:absolute 1k:w-fit 1k:left-[350px] 1k:top-[698px]`}>Aleksander Trujillo Prokhorenko</p>
-                <article className='flex justify-between text-white w-full bg-[#2D2A32] py-6 px-10 uppercase mt-8'>
+                <p className={`w-[75rem] text-end uppercase text-xl ${montserrat.className} tracking-wider 1k3:text-lg 1k2:text-base 1k2:w-[65rem] 1k:w-[55rem]  1k:absolute 1k:w-fit 1k:left-[30%] 1k:top-[70%] 600k:left-[18%] 600k:top-[65%] 600k:text-sm 400k:left-[12%] 300k:left-[6%]`}>Aleksander Trujillo Prokhorenko</p>
+                <article className='flex justify-between text-white w-full bg-[#2D2A32] py-6 px-10 uppercase mt-8 700k:flex-col 700k:items-center 700k:gap-'>
                     <p>{t('location')}</p>
                     <div className='flex gap-2 justify-center items-center'><Image src={"/assets/icons/world.svg"} width={20} height={20} alt='World icon' /> <p>{t('www')}</p></div>
                     <div className='flex gap-2 justify-center items-center'><div className='w-2 h-2 bg-lime-600 animate-fade'></div><p >{t('work')}</p></div>
