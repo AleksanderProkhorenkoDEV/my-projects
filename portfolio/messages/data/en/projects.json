@@ -15,8 +15,8 @@
     },
     "fotografo":{
         "image": "/assets/images/porfolio.png",
-        "title": "Portfolio of a photographer",
-        "description": "It's a basic website made with HTML5, CSS3 and Javascript to add features like the burger menu, this was my second to last DAW project, it's a fully responsive website for all devices. It's about the portfolio of a photographer from Granada, but as I'm not based on any of them I used my name, the data is fictitious.",
+        "title": "Photographer Website",
+        "description": "It's a basic website made with HTML5, CSS3 and Javascript to add features like the burger menu, this was my second to last DAW project, it's a fully responsive website for all devices. It's about the portfolio of a photographer from Granada.",
         "github": "https://github.com/AleksanderProkhorenkoDEV/WebDesing/tree/master/CosmoExplore",
         "link": "https://cosmosexplore.netlify.app/"
     }
