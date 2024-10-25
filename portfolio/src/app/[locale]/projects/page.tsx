@@ -40,7 +40,7 @@ export default async function ProjectPage({ params: { locale } }: ProjectPagePro
             </section>
             <Baner />
             <Suspense fallback={"laoding..."}>
-                <section className='w-11/12 mx-auto flex flex-wrap gap-4 items-center justify-around'>
+                <section className='w-full mx-auto flex flex-wrap gap-4 items-center justify-around p-4'>
                     {
                         Object.entries(messages).map(([key, project]) => (
                             <OwnCard
