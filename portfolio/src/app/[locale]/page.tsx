@@ -1,13 +1,13 @@
 import ParallaxText from '@/components/scroll-velocity/scroll-velocity';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { Grid } from '@/components/grid-layout/grid-layout';
+import cards from '@/components/grid-layout/Home/Cards';
 import { bebas, montserrat } from '@/assets/fonts';
 import { useTranslations } from 'next-intl';
 import { ProjectPageProps } from '@/types';
 import { Novatrix } from 'uvcanvas';
 import Image from 'next/image';
 import Link from 'next/link';
-import cards from '@/components/grid-layout/Home/Cards';
 
 
 export default function HomePage({ params: { locale } }: ProjectPageProps) {
