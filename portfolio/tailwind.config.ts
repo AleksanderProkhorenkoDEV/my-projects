@@ -33,6 +33,7 @@ const config: Config = {
         '1k3': { 'max': '1380px' },
         '1k2': { 'max': '1280px' },
         '1k': { 'max': '1080px' },
+        '900k': { 'max': '900px' },
         '700k': { 'max': '780px' },
         '600k': { 'max': '600px' },
         '500k': { 'max': '500px' },
