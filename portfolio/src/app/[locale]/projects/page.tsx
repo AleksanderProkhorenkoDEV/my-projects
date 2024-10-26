@@ -27,7 +27,7 @@ export default async function ProjectPage({ params: { locale } }: ProjectPagePro
                     <TextGenerateEffect words={t('hero-title')} className={`uppercase ${bebas.className} text-6xl w-3/4`}></TextGenerateEffect>
                     <TextGenerateEffect words={t('hero-text')} className='text-end w-3/4 text-2xl'></TextGenerateEffect>
                 </div>
-                <div className='hidden h-1/2  p-4 flex 1k:flex-col 1k:items-center  1k:justify-center 1k:flex 1k:gap-8 1k:absolute 1k:left-[35%] 1k:top-[25%] 700k:left-[28%] 600k:left-[20%] 500k:left-[18%] 400k:left-[16%] 300k:left-[7%]'>
+                <div className='hidden h-1/2  p-4 flex 1k:flex-col 1k:items-center  1k:justify-center 1k:flex 1k:gap-8 1k:absolute 1k:left-[35%] 1k:top-[25%] 900k:left-[31%] 700k:left-[28%] 600k:left-[20%] 500k:left-[18%] 400k:left-[16%] 300k:left-[7%]'>
                     <TextGenerateEffect words={t('hero-title')} className={`uppercase ${bebas.className} text-6xl 600k:text-4xl 300k:text-xl`}></TextGenerateEffect>
                     <Image
                         src={'/assets/images/logo.png'}

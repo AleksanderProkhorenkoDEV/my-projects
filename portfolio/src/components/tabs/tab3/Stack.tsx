@@ -12,7 +12,7 @@ const Stack = () => {
                 <ul className="flex flex-col gap-4">
                     <li>{t("first")}</li>
                     <li>{t("second")}</li>
-                    <li className="flex items-center gap-4">
+                    <li className="flex items-center gap-4 600k:flex-wrap">
                         {t("third")}
                         <span >
                             <Link href={"https://www.linkedin.com/in/aleksander-trujillo-prokhorenko-90a066299/"} className="flex items-center justify-center gap-2 p-2 text-white bg-[#0e76a8] uppercase rounded">
