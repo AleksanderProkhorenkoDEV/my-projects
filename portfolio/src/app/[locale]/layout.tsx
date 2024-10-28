@@ -40,9 +40,9 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full bg-main-bg" lang={locale}>
-      <header>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </header>
+      <head>
+        <link rel="favicon" href="/favicon.icon" type="image/png" sizes="32x32" />
+      </head>
       <body className={'flex h-full flex-col'}>
         <NextIntlClientProvider messages={messages}>
           <Nav />
