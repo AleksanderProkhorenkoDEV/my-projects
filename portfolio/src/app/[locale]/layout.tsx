@@ -40,10 +40,13 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full bg-main-bg" lang={locale}>
+      <header>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </header>
       <body className={'flex h-full flex-col'}>
         <NextIntlClientProvider messages={messages}>
           <Nav />
-          <Toaster position="bottom-right"  richColors/>
+          <Toaster position="bottom-right" richColors />
           {children}
           <Return />
           <Footer />
