@@ -16,7 +16,7 @@ export default function HomePage({ params: { locale } }: ProjectPageProps) {
     return (
         <main className='w-full flex flex-col gap-8 pb-8'>
             <section className='w-full h-screen flex flex-col items-center justify-center gap-4 600k:mb-16'>
-                <h1 className={`w-[75rem] uppercase text-7xl ${bebas.className} tracking-wider z-20 1k3:text-6xl 1k2:text-4xl 1k2:w-[65rem] 1k:text-2xl 1k:w-[55rem] 1k:absolute 1k:left-[40%] 1k:top-[30%] 1k:w-fit 600k:left-[30%] 400k:left-[35%] 300k:left-[30%]`}>{t('title')}</h1>
+                <h1 className={`w-[75rem] uppercase text-7xl ${bebas.className} tracking-wider z-20 1k3:text-6xl 1k2:text-4xl 1k2:w-[65rem] 1k:text-2xl 1k:w-[55rem] 1k:absolute 1k:left-[40%] 1k:top-[30%] 1k:w-fit 600k:left-[40%] 500k:left-[35%] 400k:left-[30%] 300k:left-[30%]`}>{t('title')}</h1>
                 <div className='relative w-[80rem] h-1/2 1k3:w-[70rem] 1k2:w-[60rem] 1k:w-[45rem] 1k:hidden'>
                     <div className='w-full h-full '>
                         <Novatrix />
