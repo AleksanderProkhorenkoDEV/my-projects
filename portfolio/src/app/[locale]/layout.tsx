@@ -6,6 +6,7 @@ import Nav from '@/components/nav';
 import { locales } from '@/config';
 import { ReactNode } from 'react';
 import { Toaster } from 'sonner';
+import { Analytics } from '@vercel/analytics/react';
 
 
 type Props = {
@@ -49,6 +50,7 @@ export default async function LocaleLayout({
           <Toaster position="bottom-right" richColors />
           {children}
           <Return />
+          <Analytics />
           <Footer />
         </NextIntlClientProvider>
       </body>
