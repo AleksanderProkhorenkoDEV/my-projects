@@ -22,7 +22,13 @@ export default function Nav() {
                     className="sm:hidden "
                 />
                 <NavbarBrand>
-                    <p className="font-bold text-inherit">ADEV</p>
+                    <p className="hidden font-bold text-inherit 1k:block">ADEV</p>
+                    <Image
+                        src={'/assets/images/logo.png'}
+                        width={80}
+                        height={80}
+                        alt='logo aleksander'
+                        className='block 1k:hidden' />
                 </NavbarBrand>
             </NavbarContent>
 
