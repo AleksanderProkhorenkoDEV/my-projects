@@ -38,7 +38,8 @@ const config: Config = {
         '600k': { 'max': '600px' },
         '500k': { 'max': '500px' },
         '400k': { 'max': '450px' },
-        '300k': { 'max': '380px' }
+        '300k': { 'max': '380px' },
+        'wh-movile': {'raw': '(max-height: 580px) and (max-width: 480px)'},
       }
     },
 
