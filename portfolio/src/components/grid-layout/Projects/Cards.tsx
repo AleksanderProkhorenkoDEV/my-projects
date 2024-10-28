@@ -1,4 +1,3 @@
-import { Card } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 
 const SkeletonOne = () => {
@@ -11,7 +10,7 @@ const SkeletonOne = () => {
             </p>
 
             < p className="font-normal text-base my-4 max-w-lg text-neutral-200 600k:text-sm" >
-                {t('description')}
+                · {t('description')}
             </p>
         </div>
     );
@@ -25,7 +24,7 @@ const SkeletonTwo = () => {
                 {t('title')}
             </p>
             < p className="font-normal text-base my-4 max-w-lg text-neutral-200 600k:text-sm" >
-                {t('description')}
+                · {t('description')}
             </p>
         </div>
     );
@@ -38,17 +37,17 @@ const SkeletonThree = () => {
                 {t('title')}
             </p>
 
-            <ul className="font-normal text-base my-4 max-w-lg text-neutral-200 600k:text-sm">
-                <li>{t('o-4')}</li>
-                <li>{t('o-5')}</li>
-                <li>{t('o-6')}</li>
-                <li>{t('o-7')}</li>
-                <li>{t('o-8')}</li>
-                <li>{t('o-9')}</li>
-                <li>{t('o-10')}</li>
-                <li>{t('o-11')}</li>
-                <li>{t('o-12')}</li>
-                <li>{t('o-13')}</li>
+            <ul className="font-normal text-base my-4 max-w-lg text-neutral-200 600k:text-sm ocultar-texto-multilinea">
+                <li>· {t('o-4')}</li>
+                <li>· {t('o-5')}</li>
+                <li>· {t('o-6')}</li>
+                <li>· {t('o-7')}</li>
+                <li>· {t('o-8')}</li>
+                <li>· {t('o-9')}</li>
+                <li>· {t('o-10')}</li>
+                <li>· {t('o-11')}</li>
+                <li>· {t('o-12')}</li>
+                <li>· {t('o-13')}</li>
             </ul>
         </div>
     );
@@ -61,9 +60,9 @@ const SkeletonFour = () => {
                 {t('title')}
             </p>
             < ul className="font-normal text-base my-4 max-w-lg text-neutral-200 600k:text-sm" >
-                <li>{t('o-1')}</li>
-                <li>{t('o-2')}</li>
-                <li>{t('o-3')}</li>
+                <li>· {t('o-1')}</li>
+                <li>· {t('o-2')}</li>
+                <li>· {t('o-3')}</li>
             </ul>
         </div>
     );
