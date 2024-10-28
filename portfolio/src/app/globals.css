@@ -223,10 +223,15 @@ html {
 
 .ocultar-texto-multilinea {
 	display: -webkit-box;
-	-webkit-line-clamp: 12; /* Cambia este valor para mostrar más o menos líneas */
+	-webkit-line-clamp: 12;
+	/* Cambia este valor para mostrar más o menos líneas */
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-  }
+}
+
+.rotate-position {
+	transform: rotate(-45deg);
+}
 
 @keyframes scrollAnimation {
 

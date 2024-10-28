@@ -32,9 +32,12 @@ export default function Nav() {
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent className="hidden sm:flex gap-8" justify="center">
                 <NavbarItem>
-                    <NavigationLink href="/">{t('me')}</NavigationLink>
+                    <NavigationLink
+                        href="/">
+                        {t('me')}
+                    </NavigationLink>
                 </NavbarItem>
                 <NavbarItem>
                     <NavigationLink href="/projects">{t('projects')}</NavigationLink>
@@ -55,9 +58,39 @@ export default function Nav() {
                 </NavbarItem>
             </NavbarContent>
             <NavbarMenu className="bg-main-bg">
-                <NavigationLink href="/">{t('me')}</NavigationLink>
-                <NavigationLink href="/projects">{t('projects')}</NavigationLink>
-                <NavigationLink href="/contact">{t('contact')}</NavigationLink>
+                <NavigationLink
+                    href="/"
+                    className="p-4 uppercase flex gap-4 items-center justify-center">
+                    {t('me')}
+                    <Image
+                        src={"/assets/icons/Arrow.svg"}
+                        width={24}
+                        height={24}
+                        alt="arrow"
+                        className="rotate-position" />
+                </NavigationLink>
+                <NavigationLink
+                    href="/projects"
+                    className="p-4 uppercase flex gap-4 items-center justify-center">
+                    {t('projects')}
+                    <Image
+                        src={"/assets/icons/Arrow.svg"}
+                        width={24}
+                        height={24}
+                        alt="arrow"
+                        className="rotate-position" />
+                </NavigationLink>
+                <NavigationLink
+                    href="/contact"
+                    className="p-4 uppercase flex gap-4 items-center justify-center">
+                    {t('contact')}
+                    <Image
+                        src={"/assets/icons/Arrow.svg"}
+                        width={24}
+                        height={24}
+                        alt="arrow"
+                        className="rotate-position" />
+                </NavigationLink>
             </NavbarMenu>
         </Navbar>
     );
