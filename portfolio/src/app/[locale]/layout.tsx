@@ -1,4 +1,5 @@
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from 'next-intl';
 import Footer from '@/components/footer/footer';
 import Return from '@/components/return';
