@@ -2,6 +2,7 @@ import ParallaxText from '@/components/scroll-velocity/scroll-velocity';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { Grid } from '@/components/grid-layout/grid-layout';
 import cards from '@/components/grid-layout/Home/Cards';
+import { Analytics } from "@vercel/analytics/react";
 import { bebas, montserrat } from '@/assets/fonts';
 import { useTranslations } from 'next-intl';
 import { ProjectPageProps } from '@/types';
