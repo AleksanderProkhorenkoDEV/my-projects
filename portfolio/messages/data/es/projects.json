@@ -17,7 +17,7 @@
         "image": "/assets/images/porfolio.png",
         "title": "Porfolio de un fotografo",
         "description": "Es una página basica hecha con HTML5, CSS3 y Javascript para añadir funciones como el burger menu, este fue mi ante penultimo proyecto de DAW, es una web full responsive para todos los dispositivos. Trata sobre el porfolio de un fotografo granadino, pero como no me base en ninguno use mi nombre, los datos son ficticios.",
-        "github": "https://github.com/AleksanderProkhorenkoDEV/WebDesing/tree/master/CosmoExplore",
-        "link": "https://cosmosexplore.netlify.app/"
+        "github": "https://github.com/AleksanderProkhorenkoDEV/WebDesing/tree/master/Fotografia",
+        "link": "https://photograpy-landing.netlify.app/"
     }
 }
