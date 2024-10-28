@@ -62,8 +62,6 @@ export default function ContactPage({ params: { locale } }: ProjectPageProps) {
                     </div>
                 </div>
 
-                <div className='border-l border-indigo-800 h-full'></div>
-
                 <div className='flex flex-1 items-center justify-center p-6 rounded-lg w-full'>
                     <FormContact
                         email_title={f("row1")}
