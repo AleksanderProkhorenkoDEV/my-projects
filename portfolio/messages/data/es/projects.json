@@ -3,8 +3,8 @@
         "image": "/assets/images/sidn.png",
         "title": "Prueba técnica Sidn",
         "description": "Consiste en hacer un tema de Wordpress con CSS y Javascript puro, en el que hiciera una petición a la API de Wordpres para obtener los post paginados y crear un botón load more, para mostrar mas sin necesidad de recargar la página.",
-        "github": "https://github.com/AleksanderProkhorenkoDEV/my-projects/tree/main/sidn",
-        "link": "https://dev-poison-drinks.pantheonsite.io/"
+        "github": "https://github.com/AleksanderProkhorenkoDEV/my-projects/tree/main/sidn"
+        
     },
     "astronomia":{
         "image": "/assets/images/astronomia.png",

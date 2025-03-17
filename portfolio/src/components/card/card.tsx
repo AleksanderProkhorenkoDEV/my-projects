@@ -40,14 +40,16 @@ const OwnCard = ({ image, title, description, github, link }: Cards) => {
                             >
                                 Github
                             </Link>
-                            <Link
-                                href={link}
-                                className="inline-flex items-center justify-center shadow-sm tracking-wide hover:shadow-md transition-shadow duration-300 text-sm text-white px-6 py-2 rounded-md font-semibold bg-indigo-600 hover:bg-indigo-500 dark:text-neutral-200"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View project
-                            </Link>
+                            {
+                                link && <Link
+                                    href={link}
+                                    className="inline-flex items-center justify-center shadow-sm tracking-wide hover:shadow-md transition-shadow duration-300 text-sm text-white px-6 py-2 rounded-md font-semibold bg-indigo-600 hover:bg-indigo-500 dark:text-neutral-200"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    View project
+                                </Link>
+                            }
                         </div>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ export interface Cards {
     title: string,
     description: string,
     github: string,
-    link: string
+    link?: string
 }
 
 export interface Projects {

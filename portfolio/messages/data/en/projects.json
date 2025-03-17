@@ -3,8 +3,8 @@
         "image": "/assets/images/sidn.png",
         "title": "Sidn technical test",
         "description": "It consists of making a Wordpress theme with CSS and pure Javascript, in which I would make a request to the Wordpress API to get the paginated posts and create a load more button, to show more without reloading the page.",
-        "github": "https://github.com/AleksanderProkhorenkoDEV/my-projects/tree/main/sidn",
-        "link": "https://dev-poison-drinks.pantheonsite.io/"
+        "github": "https://github.com/AleksanderProkhorenkoDEV/my-projects/tree/main/sidn"
+        
     },
     "astronomia":{
         "image": "/assets/images/astronomia.png",
